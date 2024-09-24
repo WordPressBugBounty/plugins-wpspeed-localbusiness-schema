@@ -1,0 +1,54 @@
+/*
+	Description: CSS for Local Business Schema Lite
+	Author: Lumiverse Dynamic
+	Author url: http://lvdynamic.com
+	Version: 1.2
+*/
+
+
+[type=radio]:checked ~ label {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .wpspgrades_content {
+  z-index: 1;
+}
+
+.box-region-middle {
+ width: 67%;
+ float: left;
+ padding: 5px;
+ min-height: 250px;
+}
+
+.box-region-right {
+ width: 28%;
+ float: right;
+ padding: 5px;
+ min-height: 250px;
+}
+
+.box-wpspgrpro {
+ background: #ffffff!important;
+ padding: 5px 10px 5px 10px;
+ border-width: 0px;
+ padding-bottom: 20px;
+ border-color: #eee!important;
+ border-width: 0px;
+ border-bottom: 10px;
+ border-style: solid;
+ 
+}
+
+.box-wpspgrpro h3 {
+ 
+ text-align: center;
+ padding: 10px;
+ padding-top: 0px;
+ border-color: #eee!important;
+ border-width: 0px;
+ border-bottom: 1px;
+ border-style: solid;
+ 
+}
