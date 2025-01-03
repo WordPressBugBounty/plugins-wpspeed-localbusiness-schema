@@ -1,10 +1,12 @@
 === Local Business Schema Lite ===
 Contributors: bestseogr
 Plugin URI: https://lvdynamic.com
-Tags: local business, local seo, json schema, schema, seo, seo optimization, local optimization, json-ld, structured data
+Tags: local seo, json schema, seo optimization, json-ld, structured data
 Requires at least: 4.7
-Tested up to: 5.5.1
-Stable tag: 1.2
+Tested up to: 6.7.1
+Stable tag: 1.3
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Add JSON-LD Local Business Schema on your Website.
 
@@ -56,6 +58,9 @@ Because Google recommends using JSON-LD for structured data whenever possible.
 3. Structured Data Testing Tool
 
 == Changelog ==
+= 1.2 =
+* Tested with WP 6.7.1
+
 = 1.2 =
 * Tested with WP 5.5.1
 

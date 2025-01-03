@@ -3,9 +3,9 @@
 Plugin Name: Local Business Schema Lite
 Plugin URI: https://lvdynamic.com/
 Description: Easily Add JSON-LD LocalBusiness Schema on your Website.
-Version: 1.2
+Version: 1.3
 Author: Lumiverse Dynamic
-License: GPL2
+License: GPLv2 or later
 */
 
 // DO NOT ALLOW DIRECT ACCESS
