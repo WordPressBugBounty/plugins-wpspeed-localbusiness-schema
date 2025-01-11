@@ -3,7 +3,7 @@
 Plugin Name: Local Business Schema Lite
 Plugin URI: https://lvdynamic.com/
 Description: Easily Add JSON-LD LocalBusiness Schema on your Website.
-Version: 1.3
+Version: 1.4
 Author: Lumiverse Dynamic
 License: GPLv2 or later
 */
@@ -12,7 +12,7 @@ License: GPLv2 or later
 if ( !defined( 'ABSPATH' ) ) exit;
 
 define( 'WPSPEED_LOCALBUSINESS_PATH', plugin_dir_path( __FILE__ ) );					// Defining plugin dir path
-define( 'WPSPEED_LOCALBUSINESS_VERSION', 'v1.2');										// Defining plugin version
+define( 'WPSPEED_LOCALBUSINESS_VERSION', 'v1.4');										// Defining plugin version
 define( 'WPSPEED_LOCALBUSINESS_NAME', 'Local Business Schema Lite');		// Defining plugin name
 
 /**
@@ -139,15 +139,37 @@ function wpspeed_localbusiness_settings_page() {
 </table>
 </div>		
 	
+<div class="box-wpspgrpro" style="border-width:5px; border-style:dashed; border-color:red!important;">
+<h4 style="text-decoration: underline; font-size:25px;">GO PRO</h4>
+<table>
+<tr>
+<td>
+<p align="center">Use Coupon Code <strong>LUMIFREE30</strong> and get a <strong>30% OFF</strong></p>
+<p><strong>Features Available:</strong><br>
+1. Business Type (Choose the exact type of local business)<br>
+2. Essential Business Details (Business Name, Street Address, City, State, Postal Code, Phone Number)<br>
+3. Online Presence Information (Google Maps URL, Website URL)<br>
+4. Image to represent your business visually<br>
+5. List the payment methods<br>
+6. Add precise geographic coordinates to help search engines pinpoint your exact location.<br>
+7. Define your business’s operating hours<br>
+8. Specify your price range
+</p>
+<p align="center" style="padding:7px; color:#fff; background:#blue;"><a target="_blank" href="https://store.lvdynamic.com/product/local-business-schema-pro/">LOCAL BUSINESS SCHEMA PRO VERSION</a></li>
+</td>
+</tr>
+</table>
+</div>	
+	
 
 <div class="box-wpspgrpro">
 <h4 style="text-decoration: underline;">About Us</h4>
 <table>
 <tr>
 <td>
-<p align="center">You Need Help for Your Website?
+<p align="center">Do You Need Help for Your Website?
 Check Out Our Services</p>
-<p align="center"><a target="_blank" href="https://lvdynamic.com">Lumiverse Dynamic</a></li>
+<p align="center"><a target="_blank" href="https://lumiverse.gr">Lumiverse Dynamic</a></li>
 </td>
 </tr>
 </table>
@@ -216,4 +238,60 @@ if ( $wpspeed_lbs_active == 1 ) {
 // Yes! ... Then Go Live !
 add_action( 'wp_head', 'wpspeed_localbusiness_add_code' );
 }
-?>
+
+// Hook to display the admin notice
+add_action('admin_notices', 'show_pro_version_notification_jsonld');
+
+function show_pro_version_notification_jsonld() {
+    // Check if the current user can install plugins
+    if (!current_user_can('install_plugins')) {
+        return;
+    }
+
+    // Check if the notification was dismissed
+    $dismissed_until = get_option('pro_version_notification_jsonld_dismissed_until');
+    if ($dismissed_until && current_time('timestamp') < $dismissed_until) {
+        return;
+    }
+
+    // Display the notice
+    ?>
+    <div class="notice notice-info is-dismissible" id="pro-version-notification-jsonld">
+        <p>
+            <strong><?php esc_html_e('Exciting News!', 'wpspeed-localbusiness-schema'); ?></strong>
+            <?php esc_html_e('The PRO version of LocalBusiness JSON Schema is now available with advanced features to supercharge your website\'s SEO!', 'wpspeed-localbusiness-schema'); ?>
+        </p>
+        <p>
+            <?php esc_html_e('As a valued user, you can enjoy an exclusive 30% discount. Use the coupon code ', 'wpspeed-localbusiness-schema'); ?>
+            <strong><?php esc_html_e('LUMIFREE30', 'wpspeed-localbusiness-schema'); ?></strong>
+            <?php esc_html_e(' at checkout.', 'wpspeed-localbusiness-schema'); ?>
+        </p>
+        <p>
+            <a href="https://store.lvdynamic.com/product/local-business-schema-pro/" target="_blank" class="button button-primary">
+                <?php esc_html_e('Learn More and Upgrade', 'wpspeed-localbusiness-schema'); ?>
+            </a>
+        </p>
+    </div>
+    <script type="text/javascript">
+        (function($) {
+            $('#pro-version-notification-jsonld').on('click', '.notice-dismiss', function() {
+                $.post(ajaxurl, {
+                    action: 'dismiss_pro_version_notification_jsonld'
+                });
+            });
+        })(jQuery);
+    </script>
+    <?php
+}
+
+// Handle the dismissal of the notification
+add_action('wp_ajax_dismiss_pro_version_notification_jsonld', 'dismiss_pro_version_notification_jsonld');
+
+function dismiss_pro_version_notification_jsonld() {
+    // Set the dismissal period (20 days in seconds)
+    $dismiss_period = 20 * DAY_IN_SECONDS;
+    update_option('pro_version_notification_jsonld_dismissed_until', current_time('timestamp') + $dismiss_period);
+
+    wp_die(); // Terminate to return a proper response
+}
+

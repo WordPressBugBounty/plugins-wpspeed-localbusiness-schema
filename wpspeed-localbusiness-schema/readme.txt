@@ -1,10 +1,10 @@
-=== Local Business Schema Lite ===
+=== Local Business Schema (JSON-LD) Lite ===
 Contributors: bestseogr
 Plugin URI: https://lvdynamic.com
 Tags: local seo, json schema, seo optimization, json-ld, structured data
 Requires at least: 4.7
 Tested up to: 6.7.1
-Stable tag: 1.3
+Stable tag: 1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,7 @@ Add JSON-LD Local Business Schema on your Website.
 
 == Description ==
 
-= Local Business Schema Lite by WP-Speed =
+= Local Business Schema Lite by Lumiverse =
 
 > <strong>JSON-LD Local Business Schema</strong>
 > <br>
@@ -26,11 +26,26 @@ Add JSON-LD Local Business Schema on your Website.
 > 7. Phone
 > 8. URL
 
-
 Add Local Business Schema on your Website and Boost Your Local SEO.
 Easy and Effective !
-
-> <strong>You Need Help with your Website?</strong><br>
+<br>
+> <strong>GO PRO</strong><br>
+> View our pro version, <a href="https://store.lvdynamic.com/product/local-business-schema-pro/" rel="friend">Localbusiness Schema PRO [JSON-LD]</a>
+> <br>
+> <strong>Features Available:</strong><br>
+> 1. Business Type (Choose the exact type of local business)
+> 2. Essential Business Details (Business Name, Street Address, City, State, Postal Code, Phone Number)
+> 3. Online Presence Information (Google Maps URL, Website URL)
+> 4. Image to represent your business visually
+> 5. List the payment methods
+> 6. Add precise geographic coordinates to help search engines pinpoint your exact location.
+> 7. Define your business’s operating hours
+> 8. Specify your price range
+<br>
+<a href="https://store.lvdynamic.com/product/local-business-schema-pro/" rel="friend">VIEW MORE</a>
+<br>
+<br>
+> <strong>Do You Need Help with your Website?</strong><br>
 > Check out our Services, <a href="https://lvdynamic.com/" rel="friend">Lumiverse Dynamic</a>
 
 
@@ -58,6 +73,9 @@ Because Google recommends using JSON-LD for structured data whenever possible.
 3. Structured Data Testing Tool
 
 == Changelog ==
+= 1.4 =
+* Fix: Phone Field
+
 = 1.2 =
 * Tested with WP 6.7.1
 
