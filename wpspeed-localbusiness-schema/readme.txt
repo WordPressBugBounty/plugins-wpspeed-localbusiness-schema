@@ -4,7 +4,7 @@ Plugin URI: https://lvdynamic.com
 Tags: local seo, json schema, seo optimization, json-ld, structured data
 Requires at least: 4.7
 Tested up to: 6.8
-Stable tag: 2.0.1
+Stable tag: 3.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -20,17 +20,19 @@ Easily add structured Local Business Schema (JSON-LD) to your website — improv
 <br>
 <br>
 > <strong>Features Available:</strong><br>
-> 1. Business Type
+> 1. Business Type (4 Generic Types Available)
 > 2. Business Name
 > 3. Street Address
 > 4. Image
 > 5. City
 > 6. State
-> 7. Postal Code
-> 8. Phone
-> 9. URL
-> 10. Geo Coordinates
-> 11. Price Range
+> 7. AddressCountry
+> 8. Postal Code
+> 9. Phone
+> 10. URL
+> 11. Geo Coordinates
+> 12. Google Map
+> 13. Price Range
 
 
 <br>
@@ -57,8 +59,8 @@ Easily add structured Local Business Schema (JSON-LD) to your website — improv
 > Check out our Services, <a href="https://lvdynamic.com/" rel="friend">Lumiverse Dynamic</a>
 
 == Upgrade Notice ==
-= 2.0.1 =
-Major update! New features include business type selection, pricing range, geo coordinates, and more. After updating, please review your settings to take full advantage of the improvements and be sure that the Schema is still activated.
+= 3.0.0 =
+Major update! New features include code corrections, map link, addresscountry field, styling and more. After updating, please review your settings to take full advantage of the improvements and be sure that the Schema is still activated.
 
 
 == Installation ==
@@ -79,10 +81,17 @@ Because Google recommends using JSON-LD for structured data whenever possible.
 == Screenshots ==
 
 1. Settings Page
-2. Source Code
-3. Structured Data Testing Tool
+2. Settings Page
+3. Structured Data JSON Generated code
 
 == Changelog ==
+= 3.0.0 =
+* New: AddressCountry has been added
+* New: Google Maps Link
+* Fix: Prevent XSS vulnerabilities
+* Fix: Validation & Fallbacks
+* Fix: Smart Code Handling
+
 = 2.0.1 =
 * New: Business Type
 * New: Geo Coordinates

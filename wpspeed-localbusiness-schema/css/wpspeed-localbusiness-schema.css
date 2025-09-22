@@ -2,7 +2,7 @@
 	Description: CSS for Local Business Schema Lite
 	Author: Lumiverse Dynamic
 	Author url: http://lvdynamic.com
-	Version: 2.0
+	Version: 3.0
 */
 
 
@@ -209,4 +209,128 @@ input.cmn-toggle1-round:checked + label:before {
 input.cmn-toggle1-round:checked + label:after {	
   margin-left: 73px;
   background-color: #53f87a;
+}
+
+/* Modern Table Styling for WPSpeed Local Business Schema */
+.wpspeed-lbs-table {
+    border-collapse: collapse;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.wpspeed-lbs-table tr {
+    transition: background-color 0.2s ease;
+	background: #ffffff;
+	margin-top:1px;
+	margin-bottom:2px;
+}
+.wpspeed-lbs-table tr:hover {
+    background-color: #abcfbb;
+}
+.wpspeed-lbs-table th {
+    text-align: left;
+    font-weight: 600;
+    color: #2c3338;
+    padding: 20px 10px 20px 20px;
+    border-bottom: 1px solid #eaeaea;
+    vertical-align: top;
+    width: 30%;
+    background-color: #f8f9fa;
+	margin-bottom:2px;
+	 border-bottom: 1px solid #000;
+}
+.wpspeed-lbs-table td {
+    padding: 15px;
+    border-bottom: 1px solid #f8f8f8;
+    vertical-align: middle;
+}
+.wpspeed-lbs-table tr:last-child th,
+.wpspeed-lbs-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Input & Textarea Styling */
+.wpspeed-lbs-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.07);
+}
+.wpspeed-lbs-input:focus {
+    border-color: #007cba;
+    box-shadow: 0 0 0 2px rgba(0, 124, 186, 0.25);
+    outline: 2px solid transparent;
+}
+.wpspeed-lbs-input::placeholder {
+    color: #a0a0a0;
+}
+
+/* Description Text Styling */
+.wpspeed-lbs-desc {
+    display: block;
+    margin-top: 6px;
+    font-size: 0.85em;
+    color: #646970;
+    font-style: italic;
+    line-height: 1.5;
+}
+.wpspeed-lbs-desc code {
+    background-color: #f0f0f1;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+/* Section Headers */
+.wpspeed-lbs-section-header {
+    font-size: 1.4em;
+    color: #1d2327;
+    margin: 2em 0 1em 0;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid #f0f0f1;
+    font-weight: 600;
+}
+
+/* Pro Upgrade Sidebar Styling */
+.wpspeed-lbs-sidebar {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.wpspeed-lbs-sidebar h3 {
+    margin-top: 0;
+    color: #007cba;
+    font-size: 1.2em;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 10px;
+}
+.wpspeed-lbs-sidebar ul {
+    margin-left: 0;
+    padding-left: 1.2em;
+}
+.wpspeed-lbs-sidebar ul li {
+    margin-bottom: 8px;
+}
+.wpspeed-lbs-cta {
+    background-color: #f8f9fa;
+    border-left: 4px solid #007cba;
+    padding: 15px;
+    margin-top: 15px;
+}
+.wpspeed-lbs-cta p {
+    margin-top: 0;
+}
+.wpspeed-lbs-cta .button {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0;
 }
