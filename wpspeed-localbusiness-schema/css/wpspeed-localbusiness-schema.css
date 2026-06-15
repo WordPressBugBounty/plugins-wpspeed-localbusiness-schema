@@ -334,3 +334,198 @@ input.cmn-toggle1-round:checked + label:after {
     font-weight: bold;
     margin-bottom: 0;
 }
+/* 3.3.0 Dashboard, Wizard, Health Check and Media UI */
+.wpspeed-lbs-wrap .wpspeed-lbs-version {
+    font-size: 13px;
+    background: #eef6ff;
+    color: #1d4f8f;
+    padding: 3px 8px;
+    border-radius: 999px;
+    vertical-align: middle;
+}
+.wpspeed-lbs-dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(180px, 1fr));
+    gap: 14px;
+    margin: 18px 0;
+}
+.wpspeed-lbs-dashboard-card {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+.wpspeed-lbs-dashboard-label {
+    display: block;
+    color: #646970;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    margin-bottom: 8px;
+}
+.wpspeed-lbs-dashboard-card strong {
+    display: block;
+    font-size: 22px;
+    color: #1d2327;
+    line-height: 1.2;
+}
+.wpspeed-lbs-dashboard-card p {
+    margin-bottom: 0;
+    color: #50575e;
+}
+.wpspeed-lbs-score-card {
+    border-left: 5px solid #00a32a;
+}
+.wpspeed-lbs-dashboard-actions .button {
+    display: block;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.wpspeed-lbs-seo-notice {
+    margin: 15px 0 !important;
+}
+.wpspeed-lbs-wizard-panel {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+.wpspeed-lbs-wizard-head h2 {
+    margin-top: 0;
+}
+.wpspeed-lbs-wizard-steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+}
+.wpspeed-lbs-wizard-step.is-active {
+    background: #2271b1;
+    border-color: #2271b1;
+    color: #fff;
+}
+.wpspeed-lbs-media-actions {
+    margin: 8px 0;
+}
+.wpspeed-lbs-media-preview {
+    margin-top: 10px;
+    padding: 8px;
+    background: #f6f7f7;
+    border: 1px solid #dcdcde;
+    display: inline-block;
+}
+.wpspeed-lbs-media-preview img {
+    max-width: 180px;
+    max-height: 120px;
+    display: block;
+}
+.wpspeed-lbs-health-score {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    background: #eef6ff;
+    border: 4px solid #2271b1;
+    color: #1d4f8f;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 8px 0 15px;
+}
+.wpspeed-lbs-health-table td:first-child {
+    width: 36px;
+}
+.wpspeed-lbs-status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    font-weight: 700;
+}
+.wpspeed-lbs-status-ok {
+    background: #edfaef;
+    color: #008a20;
+}
+.wpspeed-lbs-status-warning {
+    background: #fff8e5;
+    color: #996800;
+}
+.wpspeed-lbs-status-error {
+    background: #fcf0f1;
+    color: #b32d2e;
+}
+.wpspeed-lbs-preview-actions .button {
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+.wpspeed-lbs-copy-done {
+    color: #008a20;
+    font-weight: 700;
+    margin-left: 8px;
+}
+.wpspeed-lbs-pro-box {
+    border-top: 5px solid #2271b1;
+}
+@media screen and (max-width: 1100px) {
+    .wpspeed-lbs-dashboard {
+        grid-template-columns: repeat(2, minmax(180px, 1fr));
+    }
+    .box-region-middle,
+    .box-region-right {
+        width: 100%;
+        float: none;
+        box-sizing: border-box;
+    }
+}
+@media screen and (max-width: 680px) {
+    .wpspeed-lbs-dashboard {
+        grid-template-columns: 1fr;
+    }
+    .wpspeed-lbs-wizard-steps .button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+.wpspeed-lbs-lite-offer {
+    border-left-color: #34407d !important;
+    padding: 14px 16px;
+    margin: 18px 0;
+    background: #f8fbff;
+    box-shadow: 0 2px 8px rgba(52, 64, 125, 0.08);
+}
+.wpspeed-lbs-lite-offer p {
+    margin: 7px 0;
+}
+.wpspeed-lbs-coupon-label {
+    font-weight: 700;
+    margin-right: 6px;
+}
+.wpspeed-lbs-coupon-code {
+    display: inline-block;
+    padding: 7px 12px;
+    margin-right: 10px;
+    border-radius: 6px;
+    background: #fff;
+    border: 1px dashed #34407d;
+    color: #1d2b6f;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .04em;
+}
+.wpspeed-lbs-coupon-card {
+    background: #f8fbff;
+    border: 1px solid #dbe7ff;
+    border-radius: 8px;
+    padding: 14px;
+    margin-top: 14px;
+}
+.wpspeed-lbs-coupon-card p {
+    margin: 7px 0;
+}
